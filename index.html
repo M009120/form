@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Input Validation</title>
+  </head>
+  <body>
+    <h1>User Registration Form</h1>
+    <form id="registrationForm">
+      <label for="firstName">First Name (max 10 chars):</label>
+      <input type="text" id="firstName" required /><br /><br />
+
+      <label for="lastName">Last Name (max 10 chars):</label>
+      <input type="text" id="lastName" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required /><br /><br />
+
+      <label for="password"
+        >Password (max 8 chars, must include uppercase, lowercase, symbols,
+        numbers):</label
+      >
+      <input type="password" id="password" required /><br /><br />
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" required /><br /><br />
+
+      <label for="phone">Phone Number (format: 0123456789):</label>
+      <input type="text" id="phone" required /><br /><br />
+
+      <label for="file">Upload File (jpg or png):</label>
+      <input type="file" id="file" accept=".jpg, .png" required /><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- <script> -->
+    <script src="./main.js"></script>
+  </body>
+</html>
